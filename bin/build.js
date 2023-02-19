@@ -6,7 +6,6 @@ const production = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
 const entryPoints = ['src/index.ts', 'src/tagPage.ts'];
-
 /**
  * Default Settings
  * @type {esbuild.BuildOptions}
