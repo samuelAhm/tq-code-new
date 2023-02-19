@@ -14,16 +14,16 @@ window.Webflow.push(() => {
     position: { lat: 40.71328263476621, lng: -73.95806496031473 },
     map: map,
   });
-  const locationSelect = document.querySelector<HTMLSelectElement>('[tq-element="select"]');
-  if (!locationSelect) return;
 
   const formEl = document.querySelector<HTMLFormElement>('[tq-element="form"]');
   formEl?.addEventListener('submit', (e) => {
     e.preventDefault();
     e.stopPropagation();
   });
-  const locationText = document.querySelector<HTMLElement>('.text-style');
+  const locationText = document.querySelector<HTMLElement>('[tq-element="text-style"]');
   if (!locationText) return;
+  const locationSelect = document.querySelector<HTMLSelectElement>('[tq-element="select"]');
+  if (!locationSelect) return;
   //function to center map and add marker
   const centerMap = function (lat: number, lng: number) {
     map.setCenter({ lat: lat, lng: lng });
