@@ -9,19 +9,11 @@ window.Webflow.push(() => {
     zoom: 15,
     center: { lat: 40.71328263476621, lng: -73.95806496031473 },
   });
-
   new google.maps.Marker({
     position: { lat: 40.71328263476621, lng: -73.95806496031473 },
     map: map,
   });
 
-  const formEl = document.querySelector<HTMLFormElement>('[tq-element="form"]');
-  formEl?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-  });
-  const locationText = document.querySelector<HTMLElement>('[tq-element="text-style"]');
-  if (!locationText) return;
   const locationSelect = document.querySelector<HTMLSelectElement>('[tq-element="select"]');
   if (!locationSelect) return;
   //function to center map and add marker
@@ -36,7 +28,8 @@ window.Webflow.push(() => {
   //rendering different maps based on user input
   const locationWrapper = document.querySelector<HTMLElement>('[tq-element="location-wrapper"]');
   if (!locationWrapper) return;
-
+  const locationText = document.querySelector<HTMLElement>('[tq-element="text-style"]');
+  if (!locationText) return;
   const updateUi = function (
     address: string,
     phoneNumber: number,

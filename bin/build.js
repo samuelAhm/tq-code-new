@@ -5,7 +5,7 @@ const buildDirectory = 'dist';
 const production = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
-const entryPoints = ['src/index.ts', 'src/tagPage.ts'];
+const entryPoints = ['src/index.ts', 'src/tagPage.ts', 'src/webflow-test.ts'];
 /**
  * Default Settings
  * @type {esbuild.BuildOptions}
