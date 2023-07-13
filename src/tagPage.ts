@@ -243,7 +243,7 @@ window.Webflow.push(() => {
     }
 
     if (locationSelect.value === '8') {
-      centerMap(0, 0);
+      centerMap(42.01172, -87.70361);
       updateUi(
         '2939 W Touhy Ave',
         8722729824,
@@ -450,7 +450,7 @@ window.Webflow.push(() => {
 
     if (locationSelect.value === '21') {
       //Los angeles
-      centerMap(0, 0);
+      centerMap(34.07725, -118.34399);
       updateUi(
         '332 N La Brea Ave. Los Angeles CA 90036',
         3232383601,
@@ -593,7 +593,7 @@ window.Webflow.push(() => {
 
     if (locationSelect.value === '30') {
       //Stamford Hill
-      centerMap(0, 0);
+      centerMap(51.56515, -0.06829);
       updateUi(
         '78 Cazenove Road N16 6AA',
         2034755454,
@@ -641,7 +641,7 @@ window.Webflow.push(() => {
 
     if (locationSelect.value === '33') {
       //tag Montreal
-      centerMap(0, 0);
+      centerMap(42.64434, -83.08847);
       updateUi(
         '2165 Barclay, Basement Entrance',
         5148190844,
@@ -673,7 +673,7 @@ window.Webflow.push(() => {
 
     if (locationSelect.value === '35') {
       //Vienna
-      centerMap(0, 0);
+      centerMap(48.21528, 16.37826);
       updateUi(
         'Lilienbrunngasse 17, 1020 Wien',
         4319972926,
@@ -689,7 +689,7 @@ window.Webflow.push(() => {
 
     if (locationSelect.value === '36') {
       //Waterbury
-      centerMap(0, 0);
+      centerMap(41.5719, -73.04365);
       updateUi(
         '135 Roseland Ave. Lower Level, Waterbury, CT 06710, USA',
         2037598551,
